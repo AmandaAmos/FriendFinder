@@ -12,20 +12,21 @@ var app = express();
 var PORT = process.env.PORT || 3000;
 
 //express to handle data 
-app.use(bodyParser.json());
-app.use(bodyParser.urlencoded({ extended: true}));
-app.use(bodyParser.text());
-app.use(bodyParser.json({ type: "application/vnd.api+json"}));
+//app.use(bodyParser.json());
+//app.use(bodyParser.urlencoded({ extended: true}));
+//app.use(bodyParser.text());
+//app.use(bodyParser.json({ type: "application/vnd.api+json"}));
 
-app.use(express.static("app/public"));
+app.use(express.urlencoded({ extended: true }));
+app.use(express.json());
 
 //where the require api routes live
-require("./routing/apiRoutes.js")(app);
-require("./routing/htmlRoutes.js")(app);
+require("./routes/apiRoutes")(app);
+require("./routes/htmlRoutes")(app);
 
-app.get("/", function(req, res) {
-    res.sendFile(path.join(__dirname, ".app\public\home.html"));
-  });
+//app.get("/", function(req, res) {
+ //   res.sendFile(path.join(__dirname, ".app\public\home.html"));
+ // });
   
 
 

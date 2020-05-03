@@ -5,7 +5,7 @@ var path = require("path");
 
 //the route we're taking
 
-module.exports = function (app) {
+module.exports = function (htmlRoutes) {
     //this is where the GET requests live. 
     //it's what happens when someone visits a page
 
