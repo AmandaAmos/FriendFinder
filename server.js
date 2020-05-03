@@ -20,12 +20,12 @@ app.use(bodyParser.json({ type: "application/vnd.api+json"}));
 app.use(express.static("app/public"));
 
 //where the require api routes live
-app.use.require("./app/routing/apiRoutes")(app);
-app.use.require("./app/routing/htmlRoutes")(app);
+require("./routing/apiRoutes.js")(app);
+require("./routing/htmlRoutes.js")(app);
 
-//app.get("/", function(req, res) {
-  //  res.sendFile(path.join(__dirname, "./app/public/home.html"));
- // });
+app.get("/", function(req, res) {
+    res.sendFile(path.join(__dirname, ".app\public\home.html"));
+  });
   
 
 
