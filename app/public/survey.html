@@ -25,11 +25,11 @@
             <input type="text" id="photo" class="form-control" required="">
         </div>
         <hr>
-        <div class="container" id="one">
+        <div class="container">
             <div class="card-panel brown lighten-4">
                 <div class="input-field col s12">
                     <h5 class="left-align">The Simpson's is a viable source for indepth social commentary.</h5>
-                    <select class="browser-default">
+                    <select class="browser-default" id="one">
                         <option value="">Choose your option</option>
                         <option value="1">Strongly Agree</option>
                         <option value="2">Agree</option>
@@ -42,11 +42,11 @@
             </div>
         </div>
         <hr>
-        <div class="container" id="two">
+        <div class="container">
             <div class="card-panel brown lighten-4">
                 <div class="input-field col s12">
                     <h5 class="left-align">Being out in the woods is a relaxing experience.</h5>
-                    <select class="browser-default">
+                    <select class="browser-default" id="two">
                         <option value="">Choose your option</option>
                         <option value="1">Strongly Agree</option>
                         <option value="2">Agree</option>
@@ -59,11 +59,11 @@
             </div>
         </div>
         <hr>
-        <div class="container" id="three">
+        <div class="container">
             <div class="card-panel brown lighten-4">
                 <div class="input-field col s12">
                     <h5 class="left-align">Stopping to smell the roses is never a waste of time.</h5>
-                    <select class="browser-default">
+                    <select class="browser-default" id="three">
                         <option value="">Choose your option</option>
                         <option value="1">Strongly Agree</option>
                         <option value="2">Agree</option>
@@ -76,11 +76,11 @@
             </div>
         </div>
         <hr>
-        <div class="container" id="four">
+        <div class="container">
             <div class="card-panel brown lighten-4">
                 <div class="input-field col s12">
                     <h5 class="left-align">Live concerts are a highlight of my year.</h5>
-                    <select class="browser-default">
+                    <select class="browser-default" id="four">
                         <option value="">Choose your option</option>
                         <option value="1">Strongly Agree</option>
                         <option value="2">Agree</option>
@@ -93,11 +93,11 @@
             </div>
         </div>
         <hr>
-        <div class="container" id="five">
+        <div class="container">
             <div class="card-panel brown lighten-4">
                 <div class="input-field col s12">
                     <h5 class="left-align">I'm always up for eating new foods.</h5>
-                    <select class="browser-default">
+                    <select class="browser-default" id="five">
                         <option value="">Choose your option</option>
                         <option value="1">Strongly Agree</option>
                         <option value="2">Agree</option>
@@ -110,11 +110,11 @@
             </div>
         </div>
         <hr>
-        <div class="container" id="six">
+        <div class="container">
             <div class="card-panel brown lighten-4">
                 <div class="input-field col s12">
                     <h5 class="left-align">Traveling to new places and visiting different cultures is a must.</h5>
-                    <select class="browser-default">
+                    <select class="browser-default" id="six">
                         <option value="">Choose your option</option>
                         <option value="1">Strongly Agree</option>
                         <option value="2">Agree</option>
@@ -127,12 +127,12 @@
             </div>
         </div>
         <hr>
-        <div class="container" id="seven">
+        <div class="container">
             <div class="card-panel brown lighten-4">
                 <div class="input-field col s12">
                     <h5 class="left-align">Jack of all trades and master of none, is better than being master of one.
                     </h5>
-                    <select class="browser-default">
+                    <select class="browser-default" id="seven">
                         <option value="">Choose your option</option>
                         <option value="1">Strongly Agree</option>
                         <option value="2">Agree</option>
@@ -145,11 +145,11 @@
             </div>
         </div>
         <hr>
-        <div class="container" id="eight">
+        <div class="container">
             <div class="card-panel brown lighten-4">
                 <div class="input-field col s12">
                     <h5 class="left-align">Sunshine is essential.</h5>
-                    <select class="browser-default">
+                    <select class="browser-default" id="eight">
                         <option value="">Choose your option</option>
                         <option value="1">Strongly Agree</option>
                         <option value="2">Agree</option>
@@ -162,11 +162,11 @@
             </div>
         </div>
         <hr>
-        <div class="container" id="nine">
+        <div class="container">
             <div class="card-panel brown lighten-4">
                 <div class="input-field col s12">
                     <h5 class="left-align">Coffee makes the world turn.</h5>
-                    <select class="browser-default">
+                    <select class="browser-default" id="nine">
                         <option value="">Choose your option</option>
                         <option value="1">Strongly Agree</option>
                         <option value="2">Agree</option>
@@ -179,11 +179,11 @@
             </div>
         </div>
         <hr>
-        <div class="container" id="ten">
+        <div class="container">
             <div class="card-panel brown lighten-4">
                 <div class="input-field col s12">
                     <h5 class="left-align">Hot or Iced Tea is my go to beverage.</h5>
-                    <select class="browser-default">
+                    <select class="browser-default" id="ten">
                         <option value="">Choose your option</option>
                         <option value="1">Strongly Agree</option>
                         <option value="2">Agree</option>
@@ -225,15 +225,11 @@
                 <p><a href="./friends">API Friends List</a> ||
                     <a href="https://github.com/AmandaAmos/FriendFinder"> GitHub Repo</a></p>
         </div>
-        <footer>
-
-        </footer>
         <div id="resultsModal" class="modal" role="dialog">
             <div class="modal-dialog">
                 <div class="modal-content">
                     <div class="modal-header">
                         <button type="button" class="close" data-dismiss="modal">
-                            &times;
                         </button>
                         <h2 id="modal-title"> Best Match</h2>
                     </div>
@@ -254,7 +250,7 @@
 
 
         <script type="text/javascript">
-            $("#submit").on("click", function() {
+            $("#submit").on("click", function () {
                 function validateForm() {
                     var isValid = true;
                     $(".form-control").each(function () {

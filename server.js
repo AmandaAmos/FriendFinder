@@ -4,7 +4,7 @@
 
 var express = require("express");
 var path = require("path");
-var bodyParser = require("body-parser");
+
 
 //sets up Express APP
 
@@ -21,8 +21,8 @@ app.use(express.urlencoded({ extended: true }));
 app.use(express.json());
 
 //where the require api routes live
-require("./routes/apiRoutes")(app);
-require("./routes/htmlRoutes")(app);
+var apiRoutes = require("./routes/apiRoutes")(app);
+var htmlRoutes = require("./routes/htmlRoutes")(app);
 
 //app.get("/", function(req, res) {
  //   res.sendFile(path.join(__dirname, ".app\public\home.html"));

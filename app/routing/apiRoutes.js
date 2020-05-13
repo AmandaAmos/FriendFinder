@@ -7,7 +7,7 @@ var friends = require("../data/friends");
 
 //routes we're taking
 
-module.exports = apiRoutes 
+ 
     //api get requests
     //code that handles data from individual users.
 
@@ -83,4 +83,4 @@ module.exports = apiRoutes
     //res.json(false);
     // }
     //    })
-
+module.exports = apiRoutes

@@ -1,15 +1,8 @@
 {
   "name": "FriendFinder",
   "version": "1.0.0",
-  "description": "",
+  "description": "This is an app utilizing node, express, and path to bring a unique experience to finding compatible friends.",
   "main": "server.js",
-  "dependencies": {
-    "body-parser": "^1.19.0",
-    "express": "^4.17.1",
-    "nodeom": "^0.0.1",
-    "path": "^0.12.7"
-  },
-  "devDependencies": {},
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "start": "node server.js"
