@@ -21,8 +21,8 @@ app.use(express.urlencoded({ extended: true }));
 app.use(express.json());
 
 //where the require api routes live
-var apiRoutes = require("./routes/apiRoutes")(app);
-var htmlRoutes = require("./routes/htmlRoutes")(app);
+require("./app/routing/apiRoutes")(app);
+require("./app/routing/htmlRoutes")(app);
 
 //app.get("/", function(req, res) {
  //   res.sendFile(path.join(__dirname, ".app\public\home.html"));

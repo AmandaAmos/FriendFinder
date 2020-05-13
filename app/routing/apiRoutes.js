@@ -4,6 +4,8 @@
 //A POST routes /api/friends. This will be used to handle incoming survey results. This route will also be used to handle the compatibility logic.
 //var userData = require();
 var friends = require("../data/friends");
+var express = require("express");
+var app = express.Router();
 
 //routes we're taking
 
@@ -11,7 +13,7 @@ var friends = require("../data/friends");
     //api get requests
     //code that handles data from individual users.
 
-
+module.exports = function(app) {
     //this is where we get the info from friends, and display as a JSON object.
     app.get("/api/friends", function (req, res) {
         res.json(friends);
@@ -72,8 +74,8 @@ var friends = require("../data/friends");
         console.log("New user added");
         console.log(userData);
         res.json(bestMatch);
-    });
-
+    })
+};
     //if(friendsData and userData thing) {
     //userData.push(req.body);
     //res.json(true);
@@ -83,4 +85,3 @@ var friends = require("../data/friends");
     //res.json(false);
     // }
     //    })
-module.exports = apiRoutes
